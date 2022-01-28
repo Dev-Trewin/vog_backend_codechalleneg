@@ -12,6 +12,21 @@ namespace VogCodeChallenge.Console
             System.Console.WriteLine("Step 7: ");
             QuestionClass.IterateListWithNoLoop();
             System.Console.WriteLine();
+
+            System.Console.WriteLine("Step 8 - Test with no posittive numbers: ");
+            QuestionClass.TESTModule(mixValues);
+            System.Console.WriteLine();
+
+            System.Console.WriteLine("Step 8 - Test with negative numbers, should throw exception: ");
+            try
+            {
+                QuestionClass.TESTModule(valuesWithException);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                System.Console.WriteLine(ex.Message);
+            }
+
         }
     }
 }
