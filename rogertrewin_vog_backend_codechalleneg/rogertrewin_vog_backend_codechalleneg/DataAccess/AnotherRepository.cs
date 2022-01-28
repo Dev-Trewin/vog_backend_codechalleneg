@@ -12,7 +12,7 @@ namespace VogCodeChallenge.API.DataAccess
 
         public AnotherRepository(string connString)
         {
-            this._connString = connString;
+            _connString = connString;
         }
         //Here I could implement EF to get the data
         //from SQL or whatever database we are using
